@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto Slab:wght@200;300;400;500;600;700');
+@import url('https://fonts.googleapis.com/css?family=Roboto Slab:wght@200;300;400;500;600;700;900');
 *{
     font-family: 'Roboto Slab';
     text-decoration: none;
@@ -37,6 +37,10 @@
     text-decoration: underline;
 }
 
+.text a:active{
+    color: white;
+}
+
 .text a:visited{
     color: white;
 }
@@ -56,9 +60,89 @@
     background-color: white;
 }
 
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
+}
+
+.footer-desc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: first baseline;
+    justify-content: space-between;
+    color: white;
+    font-weight: 400;
+    font-size: 0.7rem;
+    gap: 1vw;
+    width: 33vw;
+    margin-top: 0.7rem;
+}
+
+.footer-desc span{
+    font-weight: 700;
+}
+
+.before-copyright{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 0.5rem;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
+}
+
+.directory{
+    color: white;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-top: 2%;
+    margin-right:10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vh;
+}
+
+.directory a:hover{
+    text-decoration: underline;
+}
+
+.directory a:active{
+    color: white;
+}
+
+.directory a:visited{
+    color: white;
+}
+
+.directory span{
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
 footer{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
-    height: 20rem;
+    height: 20vhrem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4%;
+}
+
+footer img{
+    width: 27.5rem;
+    height: 3.438rem;
 }
 
 
@@ -93,18 +177,39 @@ footer{
     }
 
     .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(1.35vh) rotate(45deg);
     }
 
     .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-1.35vh) rotate(-45deg);
     }
 
+    footer img{
+        width: 50vw;
+        height: 10vh;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+    .directory{
+        display: none;
+    }
+
+    footer img{
+        height: 9vh;
+        width: 60vw;
+    }
 }
 
 @media only screen and (max-width: 500px){
     .navbar img{
         width: 55vw;
         height: 7vh;
+    }
+
+    footer img{
+        width: 70vw;
+        height: 9vh;
     }
 }
