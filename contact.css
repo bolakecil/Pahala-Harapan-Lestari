@@ -29,7 +29,8 @@
     font-size: 1.15rem;
     display: flex;
     justify-content: space-between;
-    gap: 3.375rem;
+    gap: 3.375vw;
+    /* gap: 3.375rem; */
 }
 
 .text a:hover{
@@ -38,4 +39,60 @@
 
 .text a:visited{
     color: white;
+}
+
+.hamburger{
+    display: none;
+}
+
+.bar {
+    display: block;
+    border-radius: 0.5px;
+    width: 1.2rem;
+    height: 0.53vh;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .text {
+        position: fixed;
+        left: -100%;
+        /* margin-top: 3.5rem; */
+        top: 15vh;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);;
+        /* padding-top: 1rem; */
+        padding-bottom: 1rem;
+    }
+
+
+    .text.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg);
+    }
+
 }
