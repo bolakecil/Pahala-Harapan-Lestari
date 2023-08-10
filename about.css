@@ -10,7 +10,7 @@
 
 .navbar{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
-    height: 15vh;
+    height: 5.938rem;
     padding-left: 8%;
     padding-right: 8%;
     display: flex;    
@@ -19,8 +19,8 @@
 }
 
 .navbar img{
-    width: 27vw;
-    height: 4vw;
+    width: 21.25rem;
+    height: 2.5rem;
 }
 
 .text{
@@ -47,23 +47,28 @@
 
 .bar {
     display: block;
-    border-radius: 0.5px;
+    border-radius: 0.1rem;
     width: 1.2rem;
-    height: 0.53vh;
+    height: 2.7px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
 
+footer{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
+    height: 20rem;
+}
 
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 980px) {
     .text {
         position: fixed;
         left: -100%;
         /* margin-top: 3.5rem; */
-        top: 15vh;
+        top: 5rem;
         flex-direction: column;
         width: 100%;
         text-align: center;
@@ -88,11 +93,18 @@
     }
 
     .hamburger.active .bar:nth-child(1) {
-        transform: translateY(7.5px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
 
     .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-7.5px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
 
+}
+
+@media only screen and (max-width: 500px){
+    .navbar img{
+        width: 55vw;
+        height: 7vh;
+    }
 }
