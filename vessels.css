@@ -8,6 +8,14 @@
     padding: 0;
 }
 
+a{
+    color: white;
+}
+
+html{
+    background-color: #f7f7f7;
+}
+
 .navbar{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
     height: 5.938rem;
@@ -221,11 +229,11 @@ footer img{
     }
 
     .hamburger.active .bar:nth-child(1) {
-        transform: translateY(1.35vh) rotate(45deg);
+        transform: translateY(7.8px) rotate(45deg);
     }
 
     .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-1.35vh) rotate(-45deg);
+        transform: translateY(-7.8px) rotate(-45deg);
     }
 
     footer img{

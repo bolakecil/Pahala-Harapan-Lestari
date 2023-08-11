@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+a{
+    color: white;
+}
+
 html{
     background-color: #f7f7f7;
 }
@@ -162,7 +166,7 @@ html{
 
 .heading{
     margin-left: 8%;
-    margin-top: 5%;
+    margin-top: 4%;
     font-weight: 600;
     font-size: 2.5rem;
 }
@@ -170,7 +174,7 @@ html{
 .card{
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 5%;
+    margin-top: 3.5%;
     margin-bottom: 5%;
     display: flex;
     align-items: center;
@@ -317,11 +321,11 @@ footer img{
     }
 
     .hamburger.active .bar:nth-child(1) {
-        transform: translateY(1.35vh) rotate(45deg);
+        transform: translateY(7.8px) rotate(45deg);
     }
 
     .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-1.35vh) rotate(-45deg);
+        transform: translateY(-7.8px) rotate(-45deg);
     }
 
     footer img{
@@ -357,6 +361,10 @@ footer img{
 
     .landing-text span{
         font-size: 3rem;
+    }
+
+    .heading{
+        font-size: 2rem;
     }
 
 }
