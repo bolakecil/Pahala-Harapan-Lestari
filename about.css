@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+html{
+    background-color: #f7f7f7;
+}
+
 .navbar{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
     height: 5.938rem;
@@ -226,6 +230,14 @@ footer img{
     footer img{
         height: 9vh;
         width: 60vw;
+    }
+
+    .landing-text{
+        font-size: 1rem;
+    }
+
+    .landing-text span{
+        font-size: 3rem;
     }
 }
 

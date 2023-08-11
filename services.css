@@ -160,10 +160,10 @@
 }
 
 .contact-us{
-    margin-top: 3%;
+    margin-top: 2.5%;
     color: white;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,6 +243,18 @@ footer img{
     footer img{
         height: 9vh;
         width: 60vw;
+    }
+
+    .landing-text{
+        font-size: 1rem;
+    }
+
+    .landing-text span{
+        font-size: 3rem;
+    }
+
+    .contact-us{
+        margin-top: 4%;
     }
 }
 
