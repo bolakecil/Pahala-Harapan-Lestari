@@ -8,6 +8,24 @@ function mobileMenu() {
     text.classList.toggle("active");
 }
 
+let lastScrollTop = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', function() {
+    let currentScroll = window.scrollY || document.documentElement.scrollTop; // Use documentElement.scrollTop for broader compatibility
+
+    if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        navbar.style.top = "-6rem"; // Assuming the height of your navbar is 50px
+    } else {
+        // Scrolling up
+        navbar.style.top = "0";
+    }
+
+    lastScrollTop = currentScroll;
+});
+
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyUYg0ttS_eSUs6VFcB-_5P_wvMyHalcH3S89L5sN6XJuu5zOBsWurIZ1WirM0M863w/exec'
 const form = document.forms['contact-form']
 

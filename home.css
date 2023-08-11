@@ -27,6 +27,7 @@ html{
     justify-content: space-between;
     position: fixed;
     z-index: 2;
+    transition: top 0.3s;
 }
 
 .navbar img{
@@ -164,6 +165,41 @@ html{
     font-size: 4rem;
 }
 
+.option-container{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.option{
+    width: 30%;
+    height: 75vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
+    position: relative;
+    border-radius: 5px;
+}
+
+.option img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.option p{
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 85%;
+    /* z-index: 2; */
+}
+
 footer{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
     /* height: 20vh; */
@@ -242,6 +278,22 @@ footer img{
 
     .landing-text span{
         font-size: 3rem;
+    }
+
+    .option-container{
+        flex-direction: column;
+    }
+
+    .option{
+        /* height: 30%; */
+        height: 30vh;
+        width: 100%;
+    }
+
+    .option p{
+        /* height: 20%; */
+        top: 70%;
+        /* width: 40%: */
     }
 }
 

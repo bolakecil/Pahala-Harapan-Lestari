@@ -27,6 +27,7 @@ html{
     justify-content: space-between;
     position: fixed;
     z-index: 2;
+    transition: top 0.3s;
 }
 
 .navbar img{
@@ -384,8 +385,4 @@ footer img{
         flex-direction: column;
         width: 100%;
     }
-
-    /* .landing-text span{
-        font-size: 3rem;
-    } */
 }
