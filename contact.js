@@ -8,7 +8,12 @@ function mobileMenu() {
     text.classList.toggle("active");
 }
 
-document.getElementById("button").onclick = function () {
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyUYg0ttS_eSUs6VFcB-_5P_wvMyHalcH3S89L5sN6XJuu5zOBsWurIZ1WirM0M863w/exec'
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e =>{
+    e.preventDefault()
+
     let name = document.getElementById("name").value;
     if (name == ""){
         alert("Name should not be empty!");
@@ -58,4 +63,9 @@ document.getElementById("button").onclick = function () {
         alert("Message should not be empty!");
         return false;
     }
-};
+
+    fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+    .then(response => alert("Your inquiry has been successfully recorded."))
+    .then(() => {window.location.reload();})
+    .catch(error => console.error('Error!', error.message))
+})
