@@ -184,7 +184,7 @@ html{
     /* width: 30vw; */
     display: flex;
     flex-grow: 1;
-    height: 100vh;
+    height: 101vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
 }
 
