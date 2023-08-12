@@ -91,10 +91,10 @@ html{
 }
     
 .desc-container{
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        padding-left: 8%;
-        padding-right: 8%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 8%;
+    padding-right: 8%;
 }
     
 .desc-title{
@@ -105,10 +105,10 @@ html{
 }
     
 .desc-title2{
-    color: #000;
     font-size: 2.3rem;
     text-align: center;
     font-weight: 700;
+    margin-top: 1rem;
 }
     
 .desc-text{
@@ -122,6 +122,7 @@ html{
     height: 0.3rem;
     background-color:#204782;
     align-items: center;
+    border-radius: 2px;
 }
 
 .footer-desc{
