@@ -217,28 +217,42 @@ footer img{
 
 .hero-desc{
 display: flex;
-width: 1440px;
-padding: 156px 206px 168px 206px;
-justify-content: center;
+gap: 1rem;
+flex-direction: column;
+justify-content: space-between;
 align-items: center;
+margin-top: 2rem;
+margin-bottom: 5rem;
 }
 
-.p1{
+.heading-container{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.desc-title{
 color: var(--accent, #204782);
-font-family: Roboto Slab;
-font-size: 27px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+font-size: 1.6rem;
+text-align: center;
 }
 
-.p2{
+.desc-title2{
 color: #000;
-font-family: Roboto Slab;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+font-size: 2.5rem;
+text-align: center;
+}
+
+.desc1{
+    text-align: center;
+}
+
+.hr{
+width: 60%;
+height: 0.3rem;
+background-color:#204782;
+align-items: center;
 }
 
 .desc-brief{
