@@ -33,6 +33,7 @@ html{
 .navbar img{
     width: 21.25rem;
     height: 2.5rem;
+    object-fit: contain;
 }
 
 .text{
@@ -99,7 +100,6 @@ html{
 
 .before-copyright{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -148,6 +148,7 @@ html{
 .landing-page img{
     width: 100%;
     height: 100vh;
+    object-fit: cover;
 }
 
 .landing-text{
@@ -186,27 +187,104 @@ html{
 .option img{
     height: 100%;
     width: 100%;
-    transition: bottom 2s;
 }
 
 .option:hover img, .option p:hover img{
     filter: brightness(70%);
+    transition: bottom 2s;
 }
 
 .option p{
     color: white;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     position: absolute;
     width: 100%;
     top: 85%;
-    /* z-index: 2; */
+}
+
+.desc-container{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    background: #CCD4E0;
+}
+
+.desc-container span{
+    font-weight: 600;
+    font-size: 2.7rem;
+}
+
+.brief-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    width: 100%;
+}
+
+.brief-desc img{
+    border-radius: 2px;
+}
+
+.brief-desc p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 40%;
+    padding: 3%;
+}
+
+.tiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.border{
+    display: flex;
+    flex-grow: 1;
+    width: 0.5rem;
+    border-radius: 2px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
+}
+
+.tiles-border{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    gap: 1rem;
+}
+
+.double-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6rem;
+    /* height: 45%; */
+}
+
+.double-image img{
+    height: 40vh;
+    width: 48%;
+    object-fit: cover;
+    /*^ remove atau tidak tergantung gambar*/
+}
+
+#tile1{
+    width: 100%;
+    height: 40vh;
 }
 
 footer{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
-    /* height: 20vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -218,6 +296,7 @@ footer{
 footer img{
     width: 27.5rem;
     height: 3.438rem;
+    object-fit: contain;
 }
 
 
@@ -226,7 +305,6 @@ footer img{
     .text {
         position: fixed;
         left: -100%;
-        /* margin-top: 3.5rem; */
         top: 5rem;
         flex-direction: column;
         width: 100%;
@@ -259,21 +337,31 @@ footer img{
         transform: translateY(-7.8px) rotate(-45deg);
     }
 
-    footer img{
-        width: 50vw;
-        height: 10vh;
+    .brief-desc{
+        flex-direction: column;
+    }
+
+    .brief-desc p{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .tiles-border{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .border{
+        width: 100%;  /* Make the border take the full width */
+        height: 0.5rem; /* Give it a height to make it appear as a horizontal bar */
+        margin: 1rem 0; /* Add some vertical spacing */
     }
 
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 780px){
     .directory{
         display: none;
-    }
-
-    footer img{
-        height: 9vh;
-        width: 60vw;
     }
 
     .landing-text{
@@ -289,15 +377,12 @@ footer img{
     }
 
     .option{
-        /* height: 30%; */
         height: 30vh;
         width: 100%;
     }
 
     .option p{
-        /* height: 20%; */
         top: 70%;
-        /* width: 40%: */
     }
 }
 
@@ -310,5 +395,13 @@ footer img{
     footer img{
         width: 70vw;
         height: 9vh;
+    }
+
+    .desc{
+        font-size: 0.5rem;
+    }
+
+    .copyright{
+        font-size: 0.3rem;
     }
 }
