@@ -26,7 +26,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyUYg0ttS_eSUs6VFcB-_5P_wvMyHalcH3S89L5sN6XJuu5zOBsWurIZ1WirM0M863w/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwzBqY92EJH0AScvMwS4e4rw-UsX516iSinpnv_vP7hVu3gA3jMl_z8aMGdRLChzRRJ/exec'
 const form = document.forms['contact-form']
 
 form.addEventListener('submit', e =>{

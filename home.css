@@ -186,7 +186,11 @@ html{
 .option img{
     height: 100%;
     width: 100%;
-    
+    transition: bottom 2s;
+}
+
+.option:hover img, .option p:hover img{
+    filter: brightness(70%);
 }
 
 .option p{
