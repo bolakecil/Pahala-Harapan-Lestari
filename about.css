@@ -231,14 +231,59 @@ html{
     border-radius: 2px;
 }
 
-.craftsman-content{
-    padding-right: 8%;
+.craftsmen-content{
+    margin-right: 8%;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
 }
 
-.craftsman-content p{
+.craftsman-top-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.craftsman-top-content p{
     text-align: right;
     font-weight: 400;
     font-size: 1.2rem;
+}
+
+.craftsman-image{
+    width: 48%;
+}
+
+.desc-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    gap: 2rem;
+}
+
+.desc-image img{
+    width: 100%;
+}
+
+.craftsman-bottom-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 1rem; */
+    margin-top: 0.5rem;
+}
+
+#img1{
+    width: 35%;
+    height: 40vh;
+}
+
+#img2{
+    width: 60%;
+    height: 40vh;
 }
 
 footer{
@@ -317,15 +362,23 @@ footer img{
     }
 
     .craftsman-container,.outstanding-container{
-        margin-right: 8%;
+        /* margin-right: 8%; */
+        align-items: center;
     }
 
     .steadfast-container{
         margin-left: 8%;
     }
 
-    .craftsman-title, .steadfast-title, .outstanding-title{
+    .craftsman-title, .outstanding-title{
         justify-content: center;
+        margin-right: 8%;
+        padding-right: 8%;
+    }
+
+    .steadfast-title{
+        justify-content: center;
+        margin-right: 8%;
     }
 
     .steadfast-container .title-container{
@@ -342,13 +395,33 @@ footer img{
         text-align: center;
     }
 
-    .craftsman-content{
-        padding: 0;
+    .craftsman-image{
+        width: 100%;
     }
 
-    .craftsman-content p{
+    .craftsman-top-content{
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .craftsman-top-content p{
         text-align: center;
         font-size: 1rem;
+    }
+
+    .craftsman-bottom-content{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* pushes image to support visibility */
+
+    #img1{
+        width: 100%;
+    }
+
+    #img2{
+        width: 100%;
     }
 }
 
