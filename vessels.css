@@ -215,6 +215,45 @@ footer img{
     font-size: 2.7rem;
 }
 
+.hero-desc{
+display: flex;
+width: 1440px;
+padding: 156px 206px 168px 206px;
+justify-content: center;
+align-items: center;
+}
+
+.p1{
+color: var(--accent, #204782);
+font-family: Roboto Slab;
+font-size: 27px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.p2{
+color: #000;
+font-family: Roboto Slab;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.desc-brief{
+width: 1028px;
+height: 186px;
+flex-shrink: 0;
+color: #000;
+text-align: center;
+font-family: Roboto Slab;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
 @media only screen and (max-width: 980px) {
     .text {
         position: fixed;
