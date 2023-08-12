@@ -169,8 +169,8 @@ html{
 .option-container{
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -223,7 +223,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 1.5rem;
     margin-bottom: 4%;
     width: 100%;
 }
@@ -276,6 +276,47 @@ html{
     width: 48%;
     object-fit: cover;
     /*^ remove atau tidak tergantung gambar*/
+}
+
+.customer-container{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.customer-container p{
+    font-weight: 600;
+    font-size: 2.7rem;
+}
+
+.marquee-container{
+    margin-top: 3.3rem;
+    margin-bottom: 4.5rem;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-images{
+    display: inline-block;
+    gap: 0.5rem;
+    animation: marqueeAnimation 22s linear infinite;
+}
+
+.marquee-images img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: auto;
+}
+
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 #tile1{
