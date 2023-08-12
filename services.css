@@ -80,6 +80,46 @@ html{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
 }
 
+.hero-desc{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    }
+    
+    .heading-container{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    
+    .desc-title{
+    color: var(--accent, #204782);
+    font-size: 1.6rem;
+    text-align: center;
+    }
+    
+    .desc-title2{
+    color: #000;
+    font-size: 2.5rem;
+    text-align: center;
+    }
+    
+    .desc1{
+        text-align: center;
+    }
+    
+    .hr{
+    width: 60%;
+    height: 0.3rem;
+    background-color:#204782;
+    align-items: center;
+    }
+
 .footer-desc{
     display: flex;
     flex-direction: row;
