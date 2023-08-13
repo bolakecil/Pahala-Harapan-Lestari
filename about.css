@@ -240,7 +240,7 @@ html{
     border-radius: 2px;
 }
 
-.craftsmen-content{
+.craftsman-content{
     margin-right: 8%;
     margin-top: 3rem;
     display: flex;
@@ -271,6 +271,11 @@ html{
     justify-content: space-between;
     align-items: end;
     gap: 2rem;
+}
+
+.desc-image p{
+    font-size: 1.25rem;
+    padding-top: 1.5rem;
 }
 
 .desc-image img{
@@ -351,7 +356,6 @@ html{
     justify-content: space-between;
     width: 35%;
     gap: 2rem;
-    /* height: 120vh; */
 }
 
 .left-top-gallery img{
@@ -388,6 +392,56 @@ html{
 .qhse-policy .steadfast-text{
     width: 40vw;
 }
+
+.outstanding-content{
+    margin-top: 2rem;
+    margin-right: 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.outstanding-image{
+    width: 35%;
+}
+
+.desc-award p{
+    padding-top: 1.5rem;
+}
+
+.award{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.award img{
+    width: 20%;
+}
+
+.download-cp{
+    background-color: #B7C2D4;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 4%;
+    padding-left: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.download-cp p{
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+.download-cp a:hover{
+    text-decoration: underline;
+}
+
 
 #craftsman-bottom-content-left{
     width: 30%;
@@ -572,6 +626,17 @@ footer img{
         width: 100%;
     }
 
+    .outstanding-content{
+        flex-direction: column;
+    }
+
+    .outstanding-image{
+        width: 100%;
+    }
+
+    .desc-image p{
+        font-size: 1.1rem;
+    }
 }
 
 @media only screen and (max-width: 780px){
@@ -605,5 +670,25 @@ footer img{
 
     .copyright{
         font-size: 0.3rem;
+    }
+
+    .title-container{
+        font-size: 3rem;
+    }
+
+    .desc-image p{
+        font-size: 1.1rem;
+    }
+
+    .steadfast-text p{
+        font-size: 1.05rem;
+    }
+
+    .desc-award p{
+        font-size: 1.05rem;
+    }
+
+    .download-cp p{
+        font-size: 2.1rem;
     }
 }
