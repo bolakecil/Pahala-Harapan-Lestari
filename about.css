@@ -166,7 +166,17 @@ html{
     font-size: 4rem;
 }
 
-
+.landing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    background-color: #F7F7F7;
+    pointer-events: none; /* This ensures that overlay won't interfere with any interactions */
+    z-index: 1; /* To ensure it sits on top of the text and other content */
+}
 
 .steadfast-title .title-container{
     transform: rotate(180deg);
