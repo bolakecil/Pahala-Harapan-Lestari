@@ -222,8 +222,8 @@ html{
     background-color: #B7C2D4;
     padding-right: 8%;
     padding-left: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     white-space: nowrap;
 }
 
@@ -279,7 +279,6 @@ html{
 
 .craftsman-bottom-content{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     /* gap: 1rem; */
     margin-top: 0.5rem;
@@ -293,7 +292,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3rem;
     margin-top: 3.5rem;
 }
 
@@ -305,7 +304,6 @@ html{
 .steadfast-text span{
     font-weight: 600;
     font-size: 2.2rem;
-    margin-bottom: 2rem;
 }
 
 .steadfast-text p{
@@ -317,7 +315,7 @@ html{
     text-align: center;
 }
 
-.mission .steadfast-text p span {
+.mission .steadfast-text p span,  .qhse-policy .steadfast-text p span{
     display: block; /* or inline-block */
     text-align: center;
 }
@@ -330,14 +328,76 @@ html{
     display: none;
 }
 
-#img1{
+.policy-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.top-gallery{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.left-top-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    gap: 2rem;
+    /* height: 120vh; */
+}
+
+.left-top-gallery img{
+    width: 100%;
+    height: 49%;
+}
+
+.right-top-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 60%
+}
+
+.right-top-gallery img{
+    width: 100%;
+}
+
+.bottom-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.qhse-policy .steadfast-text{
+    width: 40vw;
+}
+
+#craftsman-bottom-content-left{
     width: 35%;
     height: 40vh;
 }
 
-#img2{
+#craftsman-bottom-content-right{
     width: 60%;
     height: 40vh;
+}
+
+#right-top-gallery-top{
+    height: 65%;
+}
+
+#right-top-gallery-bottom{
+    height: 30%;
 }
 
 footer{
@@ -466,15 +526,16 @@ footer img{
     .craftsman-bottom-content{
         flex-direction: column;
         gap: 2rem;
+        align-items: center;
     }
 
     /* pushes image to support visibility */
 
-    #img1{
+    #craftsman-bottom-content-left{
         width: 100%;
     }
 
-    #img2{
+    #craftsman-bottom-content-right{
         width: 100%;
     }
 
@@ -500,6 +561,18 @@ footer img{
 
     .on-column{
         display: block;
+    }
+
+    .top-gallery{
+        flex-direction: column;
+    }
+
+    .left-top-gallery{
+        width: 100%;
+    }
+
+    .right-top-gallery{
+        width: 100%;
     }
 }
 
