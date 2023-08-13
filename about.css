@@ -262,7 +262,7 @@ html{
 }
 
 .craftsman-image{
-    width: 48%;
+    width: 65%;
 }
 
 .desc-image{
@@ -333,7 +333,7 @@ html{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
+    width: 65%;
 }
 
 .top-gallery{
@@ -341,6 +341,7 @@ html{
     justify-content: space-between;
     width: 100%;
     gap: 2rem;
+    height: 70%;
 }
 
 .left-top-gallery{
@@ -348,7 +349,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    width: 35%;
     gap: 2rem;
     /* height: 120vh; */
 }
@@ -375,7 +376,13 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
+    height: 25%;
+}
+
+.bottom-gallery img{
+    width: 47%;
 }
 
 .qhse-policy .steadfast-text{
@@ -383,12 +390,12 @@ html{
 }
 
 #craftsman-bottom-content-left{
-    width: 35%;
+    width: 30%;
     height: 40vh;
 }
 
 #craftsman-bottom-content-right{
-    width: 60%;
+    width: 67%;
     height: 40vh;
 }
 
@@ -397,7 +404,7 @@ html{
 }
 
 #right-top-gallery-bottom{
-    height: 30%;
+    height: 33%;
 }
 
 footer{
@@ -456,27 +463,11 @@ footer img{
         transform: translateY(-7.8px) rotate(-45deg);
     }
 
-}
-
-@media only screen and (max-width: 780px){
-    .directory{
-        display: none;
-    }
-
-    .landing-text{
-        font-size: 1rem;
-    }
-
-    .landing-text span{
-        font-size: 3rem;
-    }
-
     .line{
         display: none;
     }
 
     .craftsman-container,.outstanding-container{
-        /* margin-right: 8%; */
         align-items: center;
     }
 
@@ -529,8 +520,6 @@ footer img{
         align-items: center;
     }
 
-    /* pushes image to support visibility */
-
     #craftsman-bottom-content-left{
         width: 100%;
     }
@@ -573,6 +562,29 @@ footer img{
 
     .right-top-gallery{
         width: 100%;
+    }
+
+    .bottom-gallery{
+        flex-direction: column;
+    }
+
+    .bottom-gallery img{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 780px){
+    .directory{
+        display: none;
+    }
+
+    .landing-text{
+        font-size: 1rem;
+    }
+
+    .landing-text span{
+        font-size: 3rem;
     }
 }
 
