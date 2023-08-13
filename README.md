@@ -37,8 +37,7 @@ Welcome to the official website repository of PT. Pahala Harapan Lestari, a reno
 
 ## **Website Development & Design Credits**
 
-- **Design and Development:** Jessica Lynn
-- **Assisted By:** Victor Chandra
+- **Built By:** Jessica Lynn & Victor Chandra
 - **Technologies Used:** Figma, HTML, CSS, and JS
 
 ---
