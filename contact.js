@@ -25,6 +25,18 @@ window.addEventListener('scroll', function() {
     lastScrollTop = currentScroll;
 });
 
+const checkpoint = 800; // adjust this value to control the fade speed
+window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+    let opacity;
+    if (currentScroll <= checkpoint) {
+        opacity = currentScroll / checkpoint;
+    } else {
+        opacity = 1;
+    }
+    document.querySelector(".landing-overlay").style.opacity = opacity;
+});
+
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwzBqY92EJH0AScvMwS4e4rw-UsX516iSinpnv_vP7hVu3gA3jMl_z8aMGdRLChzRRJ/exec'
 const form = document.forms['contact-form']
