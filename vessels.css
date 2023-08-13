@@ -80,6 +80,51 @@ html{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
 }
 
+.hero-desc{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+    
+.desc-container{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+    
+.desc-title{
+    color: var(--accent, #204782);
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 400;
+}
+    
+.desc-title2{
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+    
+.text-desc{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+    
+.line{
+    width: 60%;
+    height: 0.3rem;
+    background-color:#204782;
+    align-items: center;
+    border-radius: 2px;
+}
+
 .footer-desc{
     display: flex;
     flex-direction: row;
@@ -185,7 +230,6 @@ html{
 
 footer{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
-    /* height: 20vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -200,73 +244,6 @@ footer img{
     object-fit: contain;
 }
 
-.desc-container{
-    margin-top: 4%;
-    margin-bottom: 4%;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 5%;
-    padding-bottom: 2%;
-    background: #CCD4E0;
-}
-
-.desc-container span{
-    font-weight: 600;
-    font-size: 2.7rem;
-}
-
-.hero-desc{
-display: flex;
-gap: 1rem;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-margin-top: 2rem;
-margin-bottom: 5rem;
-}
-
-.heading-container{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
-.desc-title{
-color: var(--accent, #204782);
-font-size: 1.6rem;
-text-align: center;
-}
-
-.desc-title2{
-color: #000;
-font-size: 2.5rem;
-text-align: center;
-}
-
-.desc1{
-    text-align: center;
-}
-
-.hr{
-width: 60%;
-height: 0.3rem;
-background-color:#204782;
-align-items: center;
-}
-
-.desc-brief{
-width: 1028px;
-height: 186px;
-flex-shrink: 0;
-color: #000;
-text-align: center;
-font-family: Roboto Slab;
-font-size: 21px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
 
 @media only screen and (max-width: 980px) {
     .text {
