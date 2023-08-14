@@ -250,6 +250,7 @@ html{
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .showcase-title img{
@@ -277,6 +278,21 @@ html{
 .title p{
     font-weight: 400;
     font-size: 1.1rem;
+}
+
+.showcase-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.long{
+    width: 60%;
+}
+
+.short{
+    width: 35%;
 }
 
 footer{
@@ -360,6 +376,18 @@ footer img{
 
     .contact-us{
         margin-top: 4%;
+    }
+
+    .showcase-content{
+        flex-direction: column;
+    }
+
+    .long{
+        width: 100%;
+    }
+
+    .short{
+        width: 100%;
     }
 }
 
