@@ -43,7 +43,6 @@ html{
     display: flex;
     justify-content: space-between;
     gap: 3.375vw;
-    /* gap: 3.375rem; */
 }
 
 .text a:hover{
@@ -87,7 +86,7 @@ html{
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
 }
     
 .desc-container{
@@ -241,6 +240,45 @@ html{
     height: 3rem;
 }
 
+.showcase-container{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 9rem;
+}
+
+.showcase-title{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.showcase-title img{
+    width: 60%;
+}
+
+.title{
+    background-color: #CCD4E0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.title .line{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.title p span{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.title p{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
 footer{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
     /* height: 20vh; */
@@ -297,6 +335,14 @@ footer img{
         transform: translateY(-7.8px) rotate(-45deg);
     }
 
+    .showcase-title{
+        flex-direction: column;
+    }
+
+    .showcase-title img{
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 780px){
@@ -334,5 +380,9 @@ footer img{
 
     .copyright{
         font-size: 0.3rem;
+    }
+
+    .title p span{
+        font-size: 2.5rem;
     }
 }
