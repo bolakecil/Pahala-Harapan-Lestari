@@ -241,6 +241,133 @@ html{
     height: 3rem;
 }
 
+.boat-showcase{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 9rem;
+}
+
+.boat-image{
+    padding: 2rem;
+    width: 55%;
+    background-image: url('assets/tile1.png');
+}
+
+.boat-image .line{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.boat-title{
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.boat-desc{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.boat-type{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.boat-text{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #CCD4E0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+}
+
+.boat-text button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.boat-text button:hover {
+    text-decoration: underline;
+}
+
+.boat-text button:focus { /* Remember, by default, divs aren't focusable. See the note below. */
+    color: var(--accent, #204782);
+}
+
+.image-desc{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.showcase-title{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.title{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    text-align: end;
+}
+
+.title .line{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.title p span{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.title p{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.boat-double-image{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#boat1{
+    width: 45%;
+}
+
+#boat2{
+    width: 60%;
+}
+
+#boat3{
+    width: 35%;
+}
+
+#boat4{
+    margin-top: 1rem;
+    width: 100%;
+}
+
 footer{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
     display: flex;
@@ -293,6 +420,21 @@ footer img{
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-7.8px) rotate(-45deg);
+    }
+    
+
+    .boat-type{
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+    }
+
+    .boat-image{
+        width: 80%;
+    }
+
+    .boat-text{
+        align-items: center;
     }
 
 }

@@ -36,3 +36,15 @@ window.addEventListener("scroll", () => {
     }
     document.querySelector(".landing-overlay").style.opacity = opacity;
 });
+
+const buttons = document.querySelectorAll('.boat-text button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        let boat = this.getAttribute('boat-name');
+        
+        for (let i = 1; i <= 5; i++) {
+            document.getElementById('image' + i).src = `${boat}/${i}.png`; // Assuming images are named 1.jpg, 2.jpg, etc.
+        }
+    });
+});
