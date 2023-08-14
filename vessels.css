@@ -241,22 +241,27 @@ html{
     height: 3rem;
 }
 
-.boat-showcase{
+.boat-gallery{
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 9rem;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
 }
 
-.boat-image{
-    padding: 2rem;
+.boat-intro{
+    padding-left: 8%;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 55%;
-    background-image: url('assets/tile1.png');
+    background-color: #B7C2D4;
+    /* color: white; */
 }
 
-.boat-image .line{
+.boat-intro .line{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 100%;
+    width: 85%;
 }
 
 .boat-title{
@@ -274,6 +279,9 @@ html{
     justify-content: space-between;
     gap: 1.5rem;
     margin-bottom: 3rem;
+    /* margin-left: 8%; */
+    margin-right: 8%;
+    margin-top: 9rem;
 }
 
 .boat-text{
@@ -285,7 +293,7 @@ html{
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 3rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
 }
 
 .boat-text button{
@@ -302,14 +310,16 @@ html{
     text-decoration: underline;
 }
 
-.boat-text button:focus { /* Remember, by default, divs aren't focusable. See the note below. */
+.boat-text button.focused { /* Remember, by default, divs aren't focusable. See the note below. */
     color: var(--accent, #204782);
 }
 
 .image-desc{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .showcase-title{
@@ -353,6 +363,7 @@ html{
 
 #boat1{
     width: 45%;
+    height: 50vh;
 }
 
 #boat2{
@@ -366,6 +377,8 @@ html{
 #boat4{
     margin-top: 1rem;
     width: 100%;
+    height: 60vh;
+    /* height: 100%; */
 }
 
 footer{
@@ -435,8 +448,8 @@ footer img{
 
     .boat-text{
         align-items: center;
+        width: 55vw;
     }
-
 }
 
 @media only screen and (max-width: 780px){
@@ -454,6 +467,35 @@ footer img{
 
     .contact-us{
         margin-top: 4%;
+    }
+
+    .showcase-title{
+        display: none;
+    }
+
+    .image-desc{
+        align-items: center;
+    }
+
+    .boat-double-image{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #boat1{
+        width: 100%;
+    }
+
+    #boat2{
+        width: 100%;
+    }
+
+    #boat3{
+        width: 100%;
+    }
+
+    #boat4{
+        width: 100%;
     }
 }
 
@@ -474,5 +516,13 @@ footer img{
 
     .copyright{
         font-size: 0.3rem;
+    }
+
+    .title p span{
+        font-size: 2.5rem;
+    }
+
+    .boat-title{
+        font-size: 1.5rem;
     }
 }
