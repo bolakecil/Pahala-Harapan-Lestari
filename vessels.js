@@ -46,10 +46,8 @@ buttons.forEach(button => {
         for (let i = 1; i <= 4; i++) {
             document.getElementById('boat' + i).src = `assets/${boat}/${i}.png`; // Assuming images are named 1.jpg, 2.jpg, etc.
         }
-
         // Remove focus from all buttons
         buttons.forEach(btn => btn.classList.remove('focused'));
-
         // Add focus class to the clicked button
         this.classList.add('focused');
     });
@@ -57,7 +55,7 @@ buttons.forEach(button => {
 
 // Default click simulation
 document.querySelector('[boat-name="tug"]').click();
-
 // If you also want the default button to visually appear focused, 
 // add the following line after the previous one:
 document.querySelector('[boat-name="tug"]').focus();
+window.scrollTo(0, 0);
