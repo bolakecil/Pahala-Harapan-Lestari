@@ -36,3 +36,23 @@ window.addEventListener("scroll", () => {
     }
     document.querySelector(".landing-overlay").style.opacity = opacity;
 });
+
+const marqueeImages = document.querySelector('.marquee-images');
+let startPosition = 0;
+const speed = 5; // Adjust this value to increase or decrease the speed
+
+function animateMarquee(timestamp) {
+    startPosition -= speed;
+    
+    // If we've moved the images 50% of their width, reset the position
+    if (Math.abs(startPosition) >= marqueeImages.offsetWidth / 2) {
+        startPosition = 0;
+    }
+    
+    marqueeImages.style.transform = `translateX(${startPosition}px)`;
+    
+    requestAnimationFrame(animateMarquee);
+}
+
+// Start the marquee animation
+requestAnimationFrame(animateMarquee);

@@ -304,7 +304,7 @@ html{
     font-size: 2.7rem;
 }
 
-.marquee-container{
+.marquee-container {
     margin-top: 3.3rem;
     margin-bottom: 4.5rem;
     width: 100%;
@@ -312,24 +312,15 @@ html{
     white-space: nowrap;
 }
 
-.marquee-images{
+.marquee-images {
     display: inline-block;
-    animation: marqueeAnimation 22s linear infinite;
+    transform: translateX(0%); /* initial position */
 }
 
-.marquee-images img{
+.marquee-images img {
     margin-left: 1rem;
     margin-right: 1rem;
     width: auto;
-}
-
-@keyframes marqueeAnimation {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
 }
 
 #tile1{
