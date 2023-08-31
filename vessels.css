@@ -525,4 +525,8 @@ footer img{
     .boat-title{
         font-size: 1.5rem;
     }
+
+    #boat1, #boat4{
+        height: 30vh;
+    }
 }
