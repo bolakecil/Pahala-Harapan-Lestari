@@ -255,6 +255,7 @@ html{
 
 .showcase-title img{
     width: 60%;
+    height: 70%;
 }
 
 .title{
@@ -263,6 +264,9 @@ html{
     padding-bottom: 2rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title .line{
@@ -288,11 +292,11 @@ html{
 }
 
 .long{
-    width: 60%;
+    width: 55%;
 }
 
 .short{
-    width: 35%;
+    width: 40%;
 }
 
 footer{
