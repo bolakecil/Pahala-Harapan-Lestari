@@ -39,7 +39,7 @@ window.addEventListener("scroll", () => {
 
 const marqueeImages = document.querySelector('.marquee-images');
 let startPosition = 0;
-const speed = 5; // Adjust this value to increase or decrease the speed
+const speed = 4; // Adjust this value to increase or decrease the speed
 
 function animateMarquee(timestamp) {
     startPosition -= speed;
