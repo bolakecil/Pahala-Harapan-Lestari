@@ -44,7 +44,7 @@ buttons.forEach(button => {
         let boat = this.getAttribute('boat-name');
         
         for (let i = 1; i <= 4; i++) {
-            document.getElementById('boat' + i).src = `assets/${boat}/${i}.png`; // Assuming images are named 1.jpg, 2.jpg, etc.
+            document.getElementById('boat' + i).src = `assets/vessels/${boat}/${i}.png`; // Assuming images are named 1.jpg, 2.jpg, etc.
         }
         // Remove focus from all buttons
         buttons.forEach(btn => btn.classList.remove('focused'));
