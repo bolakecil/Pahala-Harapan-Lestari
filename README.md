@@ -12,11 +12,11 @@ Welcome to the official website repository of PT. Pahala Harapan Lestari, a reno
 
 ### **1. Home**
 - **Brief Company Description:** An introduction to PT. Pahala Harapan Lestari and its dominance in the shipyard industry.
-- **Navigation Links:** Direct links to the ships, Services, and About pages for user convenience.
+- **Navigation Links:** Direct links to the Vessels, Services, and About pages for user convenience.
 - **Recent Customer Marquee:** Showcasing some of our esteemed clientele, including Pertamina Trans Kontinental, Kemenhub, Bakamla, Kementerian Kelautan dan Perikanan, Adaro Energy, among others.
 
-### **2. ships**
-- **Dedication Overview:** A short description showcasing PT. PHL's unwavering commitment to excellence in ship-making.
+### **2. Vessels**
+- **Dedication Overview:** A short description showcasing PT. PHL's unwavering commitment to excellence in vessel-making.
 - **Boat Production Showcase:** Features a collection of boats produced by PT. PHL including tug boats, barge boats, oil barges, pilot boats, and more.
 
 ### **3. Services**
