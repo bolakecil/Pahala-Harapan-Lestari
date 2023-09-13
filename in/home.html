@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/assets/og.png" />
+    <title>Pahala Shipyard</title>
+    <link rel="icon" href="/assets/webicon.png">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="home.html"><img src="/assets/navbarlogo.png"></a>
+        <div class="text">
+            <a href="">Home</a>
+            <a href="vessels.html">Vessels</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger"> <!-- hamburger for mobile version -->
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <!-- navigation bar -->
+
+    <!-- landing page section -->
+    <div class="landing-page">
+        <img src="/assets/home/homebg.jpeg">
+        <div class="landing-overlay"></div> <!-- The white overlay, white transition -->
+        <div class="landing-text">
+            <p><span>We Serve You.</span></p>
+            <p>Ships and docks since 1982</p>
+        </div>
+    </div>
+    <!-- landing page section -->
+
+    <!-- Option Container Start -->
+    <div class="option-container">
+        <div class="option"> <!-- service box -->
+            <a href="services.html"><img src="/assets/home/servicesoption.png"></a>
+            <a href="services.html"><p>Services</p></a>
+            <!-- sebuah workaround hehehehe :] displaynya hancur kalau a nya wrap ke div -->
+        </div>
+        <div class="option"> <!-- vessels box -->
+            <a href="vessels.html"><img src="/assets/home/vesselsoption.JPG"></a>
+            <a href="vessels.html"><p>Vessels</p></a>
+        </div>
+        <div class="option"> <!-- profile box -->
+            <a href="about.html"><img src="/assets/home/profileoption.jpg"></a>
+            <a href="about.html"><p>Profile</p></a>
+        </div>
+    </div>
+    <!-- Option Container End -->
+
+    <!-- Desc Container Start -->
+    <div class="desc-container">
+        <p><span>Forging the Future, Mastery in Every Vessel</span></p>
+        <div class="brief-desc">
+            <div class="tiles-border"> <!-- images container, 1 big (top) - 2 small (bottom)-->
+                <div class="tiles">
+                    <img src="/assets/home/hometile1.jpg" id="tile1">
+                    <div class="double-image">
+                        <img src="/assets/home/hometile2.JPG">
+                        <img src="/assets/home/hometile3.JPG">
+                    </div>
+                </div>
+                <div class="border"></div> <!-- line -->
+            </div>
+            <p>Pahala Harapan Lestari stands proud as a national shipyard icon in Indonesia since 1982. Operating wherever there's a chance to refine, pioneer, or invest, Pahala Harapan Lestari values the voices of its clients.<br><br>
+                Our inclusive, cooperative mindset has been instrumental in shaping our service offerings. Surpassing your aspirations remains our paramount objective; because, ultimately, we're constructing your future.
+            </p>
+        </div>
+    </div>
+    <!-- Desc Container End -->
+
+    <!-- our customer section -->
+    <div class="customer-container">
+        <p>Our Customers</p>
+        <div class="marquee-container"> <!--marquee section-->
+            <div class="marquee-images">
+                <img src="/assets/home/customers/pertamina.png">
+                <img src="/assets/home/customers/pelindo1.png">
+                <img src="/assets/home/customers/pelindo2.png">
+                <img src="/assets/home/customers/adaro.png">
+                <img src="/assets/home/customers/kemenhub.png">
+                <img src="/assets/home/customers/bakamla.png">
+                <img src="/assets/home/customers/kkp.png">
+                <img src="/assets/home/customers/timah.png">
+                <!-- harus diduplicate, mencegah delay pas start marquee + css diset 50% -->
+                <img src="/assets/home/customers/pertamina.png">
+                <img src="/assets/home/customers/pelindo1.png">
+                <img src="/assets/home/customers/pelindo2.png">
+                <img src="/assets/home/customers/adaro.png">
+                <img src="/assets/home/customers/kemenhub.png">
+                <img src="/assets/home/customers/bakamla.png">
+                <img src="/assets/home/customers/kkp.png">
+                <img src="/assets/home/customers/timah.png">
+            </div>
+        </div>
+    </div>
+    <!-- our customer section -->
+
+    <footer>
+        <div class="before-copyright"> <!-- everything but copyright section -->
+            <div class="logo-desc">
+                <img src="/assets/footerlogo.png">
+                <div class="footer-desc">
+                    <div class="desc"> <!-- left section of information -->
+                        <p><span>Telephone</span>: +62 (0717) 4262 666 / 777, 435914</p>
+                        <p><span>Address (Head Office)</span>:<br>Jalan Pasir Ketapang No. 5,<br>Pangkalpinang - Kepulauan Bangka Belitung,<br>Indonesia</p>
+                        <p><span>Address (Representative Office)</span><br>The Mansion Bougenville,<br>Tower Fontana Unit BF 33I1,<br>Jakarta Utara, 14410</p>
+                    </div>
+                    <div class="desc"> <!-- right section of information -->
+                        <p><span>Fax</span>: +62 (021) 439359, 4261743</p>
+                        <p><span>Email</span>:<br>office@pahalashipyard.com<br>phl_dockyard@yahoo.co.id</p>
+                    </div>
+                </div>
+            </div>
+            <div class="directory"> <!-- bottom navigation -->
+               <p><span>EXPLORE MORE</span></p>
+               <a href="">Home</a>
+               <a href="vessels.html">Vessels</a>
+               <a href="services.html">Services</a>
+               <a href="about.html">About</a>
+               <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="copyright">Copyright PT. Pahala Harapan Lestari © 2023</p>
+    </footer>
+    
+</body>
+<script src="home.js" defer></script>
+
+</html>
