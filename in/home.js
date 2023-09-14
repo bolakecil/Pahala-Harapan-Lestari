@@ -37,25 +37,22 @@ window.addEventListener("scroll", () => {
     document.querySelector(".landing-overlay").style.opacity = opacity;
 });
 
-const buttons = document.querySelectorAll('.boat-text button');
+const marqueeImages = document.querySelector('.marquee-images');
+let startPosition = 0;
+const speed = 4; // Adjust this value to increase or decrease the speed
 
-buttons.forEach(button => {
-    button.addEventListener('click', function() {
-        let boat = this.getAttribute('boat-name');
-        
-        for (let i = 1; i <= 4; i++) {
-            document.getElementById('boat' + i).src = `/assets/services/${boat}/${i}.png`; // Assuming images are named 1.jpg, 2.jpg, etc.
-        }
-        // Remove focus from all buttons
-        buttons.forEach(btn => btn.classList.remove('focused'));
-        // Add focus class to the clicked button
-        this.classList.add('focused');
-    });
-});
+function animateMarquee(timestamp) {
+    startPosition -= speed;
+    
+    // If we've moved the images 50% of their width, reset the position
+    if (Math.abs(startPosition) >= marqueeImages.offsetWidth / 2) {
+        startPosition = 0;
+    }
+    
+    marqueeImages.style.transform = `translateX(${startPosition}px)`;
+    
+    requestAnimationFrame(animateMarquee);
+}
 
-// Default click simulation
-document.querySelector('[boat-name="tug"]').click();
-// If you also want the default button to visually appear focused, 
-// add the following line after the previous one:
-document.querySelector('[boat-name="tug"]').focus();
-window.scrollTo(0, 0);
+// Start the marquee animation
+requestAnimationFrame(animateMarquee);
