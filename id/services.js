@@ -59,3 +59,46 @@ document.querySelector('[boat-name="tug"]').click();
 // add the following line after the previous one:
 document.querySelector('[boat-name="tug"]').focus();
 window.scrollTo(0, 0);
+
+// Your existing JavaScript code...
+
+// Language switch button functionality
+const languageButton = document.getElementById('languageButton');
+const languages = ['EN', 'ID', 'ZH']; // The order here determines the cycle order
+let currentLanguage = 'ID'; // Default language
+
+// Function to determine the current language from the URL
+function setCurrentLanguageFromUrl() {
+  const pathname = window.location.pathname;
+
+  if (pathname.includes('/id/')) {
+    currentLanguage = 'ID';
+  } else if (pathname.includes('/zh/')) {
+    currentLanguage = 'ZH';
+  } else {
+    currentLanguage = 'EN';
+  }
+  // Set the button text to the current language
+  languageButton.textContent = currentLanguage;
+}
+
+// Function to change the page language
+function changePageLanguage() {
+  // Get the current file name (e.g., "about.html")
+  const currentPage = window.location.pathname.split('/').pop();
+  
+  // Determine the next language by finding the index of the current language and incrementing it
+  let currentLanguageIndex = languages.indexOf(currentLanguage);
+  let nextLanguageIndex = (currentLanguageIndex + 1) % languages.length;
+  let nextLanguage = languages[nextLanguageIndex].toLowerCase();
+
+  // Change the URL to the selected language version's folder
+  let newUrl = window.location.origin + '/' + nextLanguage + '/' + currentPage;
+  window.location.href = newUrl;
+}
+
+// Call the function to set the initial language on the button
+setCurrentLanguageFromUrl();
+
+// Add event listener for clicks to cycle through languages
+languageButton.addEventListener('click', changePageLanguage);

@@ -80,6 +80,20 @@ html{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), var(--accent, #204782);
 }
 
+.floating-button{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0.5rem;
+    background-color: #0D2954;
+    color: white;
+    font-size: 1rem;
+    padding: 1.5rem;
+    z-index: 5;
+    border-radius: 100%;
+    border-style: none;
+}
+
 .footer-desc{
     display: flex;
     flex-direction: row;
