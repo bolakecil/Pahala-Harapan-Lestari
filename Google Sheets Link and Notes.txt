@@ -4,3 +4,5 @@ https://docs.google.com/spreadsheets/d/1muafnUgDKFNAkbfgiDzhxd1UVBISPibQNh-K8jbE
 note: 
 - bisa clear record tapi first row tidak boleh diganti (referensi ke kode)
 - nama page dan judul google sheets tidak boleh diganti
+
+"Services" page + related display naming direname menjadi "Repairs", asset dan file naming tetap sama (menggunakan "Services")
