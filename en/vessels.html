@@ -55,41 +55,47 @@
     </div>
     <!-- Hero Desc Section Ends-->
 
-    <!-- showcase section -->
-    <div class="showcase-container">
-        <div class="showcase-title"> <!-- title -->
-            <div class="title">
-                <p><span>Vessel</span></p>
-                <p><span>Showcase</span></p>
-                <div class="line"></div>
-                <p>A gallery of our greatest fleets,<br>crafted with care and excellence.<br>Masterpiece in its class.</p>
-            </div>
-            <img src="/assets/vessels/patra1.JPG" title="TB Patra">
+    <!-- boat type navigation -->
+    <div class="boat-type">
+        <!-- description -->
+        <div class="boat-intro">
+            <p class="boat-title">Discover our<br><span>vessel</span><br>families.</p>
+            <div class="line"></div>
+            <p class="boat-desc">A perfect fit for your every need.<br>Take a look at our variety of vessels,<br>tailored to your specific requirements.</p>
         </div>
-        <!-- images -->
-        <div class="showcase-content">
-            <img class="long" src="/assets/vessels/patra2.JPG" title="TB Patra"> <!-- image ratio -->
-            <img class="short" src="/assets/vessels/patra3.JPG" title="TB Patra">
+        <!-- description -->
+        <!-- boat option  -->
+        <div class="boat-text">
+            <button boat-name="tug">Tug Boats</button>
+            <button boat-name="oil">Oil Barge</button>
+            <button boat-name="deck">Deck Barge</button>
+            <button boat-name="nav&def">Navigation & Defense</button>
+            <button boat-name="passenger">Passenger Ship</button>
         </div>
-        <div class="showcase-content">
-            <img class="short" src="/assets/vessels/ame1.JPG" title="AME II Oil Barge">
-            <img class="long" src="/assets/vessels/ame2.JPG" title="AME II Oil Barge">
-        </div>
-        <div class="showcase-content">
-            <img class="long" src="/assets/vessels/ame3.JPG" title="AME II Oil Barge">
-            <img class="short" src="/assets/vessels/ame4.JPG" title="AME II Oil Barge">
-        </div>
-        <div class="showcase-content">
-            <img class="short" src="/assets/vessels/sentana1.JPG" title="Oil Barge Sentana 4">
-            <img class="long" src="/assets/vessels/sentana2.JPG" title="Oil Barge Sentana 4">
-        </div>
-        <div class="showcase-content">
-            <img class="long" src="/assets/vessels/sentana3.JPG" title="Oil Barge Sentana 4">
-            <img class="short" src="/assets/vessels/sentana4.JPG" title="Oil Barge Sentana 4">
-        </div>
-        <!-- images -->
+        <!-- boat option  -->
     </div>
-    <!-- showcase section --> 
+    <!-- boat type navigation -->
+
+    <!-- boat images according to chosen option -->
+    <div class="boat-gallery">
+        <div class="image-desc">
+            <img id="boat1" src=""> <!-- image1 based on chosen option -->
+            <div class="showcase-title"> <!-- title -->
+                <div class="title">
+                    <p><span>Vessel</span></p>
+                    <p><span>Showcase</span></p>
+                    <div class="line"></div>
+                    <p>A gallery of our greatest fleets,<br>crafted with care and excellence.<br>Masterpiece in its class.</p>
+                </div>
+            </div>
+        </div>
+        <div class="boat-double-image">
+            <img id="boat2" src=""> <!-- image2 based on chosen option -->
+            <img id="boat3" src=""> <!-- image3 based on chosen option -->
+        </div>
+        <img id="boat4" src=""> <!-- image4 based on chosen option -->
+    </div>
+    <!-- boat images according to chosen option -->   
 
     <footer>
         <div class="before-copyright"> <!-- everything but copyright section -->

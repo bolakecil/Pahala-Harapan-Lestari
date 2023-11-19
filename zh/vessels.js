@@ -37,12 +37,35 @@ window.addEventListener("scroll", () => {
     document.querySelector(".landing-overlay").style.opacity = opacity;
 });
 
+const buttons = document.querySelectorAll('.boat-text button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        let boat = this.getAttribute('boat-name');
+        
+        for (let i = 1; i <= 4; i++) {
+            document.getElementById('boat' + i).src = `/assets/services/${boat}/${i}.png`; // Assuming images are named 1.jpg, 2.jpg, etc.
+        }
+        // Remove focus from all buttons
+        buttons.forEach(btn => btn.classList.remove('focused'));
+        // Add focus class to the clicked button
+        this.classList.add('focused');
+    });
+});
+
+// Default click simulation
+document.querySelector('[boat-name="tug"]').click();
+// If you also want the default button to visually appear focused, 
+// add the following line after the previous one:
+document.querySelector('[boat-name="tug"]').focus();
+window.scrollTo(0, 0);
+
 // Your existing JavaScript code...
 
 // Language switch button functionality
 const languageButton = document.getElementById('languageButton');
 const languages = ['EN', 'ID', 'ZH']; // The order here determines the cycle order
-let currentLanguage = 'ZH'; // Default language
+let currentLanguage = 'EN'; // Default language
 
 // Function to determine the current language from the URL
 function setCurrentLanguageFromUrl() {
