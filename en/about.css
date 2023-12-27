@@ -223,6 +223,10 @@ html{
     margin-bottom: 1rem;
 }
 
+.outstanding-container{
+    margin-bottom: 3.3rem;
+}
+
 .craftsman-title, .outstanding-title, .steadfast-title{
     display: flex;
     justify-content: space-between;
@@ -440,28 +444,6 @@ html{
 .award img{
     width: 20%;
 }
-
-.download-cp{
-    background-color: #B7C2D4;
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
-    margin-left: 8%;
-    margin-right: 8%;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-.download-cp p{
-    font-weight: 600;
-    font-size: 2.3rem;
-}
-
-.download-cp a:hover{
-    text-decoration: underline;
-}
-
 
 #craftsman-bottom-content-left{
     width: 30%;
@@ -707,9 +689,5 @@ footer img{
 
     .desc-award p{
         font-size: 1.05rem;
-    }
-
-    .download-cp p{
-        font-size: 2.1rem;
     }
 }
