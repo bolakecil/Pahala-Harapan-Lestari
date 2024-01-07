@@ -142,3 +142,12 @@ setCurrentLanguageFromUrl();
 
 // Add event listener for clicks to cycle through languages
 languageButton.addEventListener('click', changePageLanguage);
+
+//update year automatically
+document.addEventListener('DOMContentLoaded', (event) => {
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = document.querySelector('footer .copyright');
+    if (copyrightElement) {
+        copyrightElement.textContent = `Copyright PT. Pahala Harapan Lestari © ${currentYear}`;
+    }
+});
