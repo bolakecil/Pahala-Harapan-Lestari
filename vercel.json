@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/en/home.html"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/en/$1"
+      }
+    ]
+  }
+  
